@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3E5D8;
+    min-height: 100vh;
+}
+
+.card-recipe {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.food-image {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.food-recipe-name {
+    font-size: xx-large;
+    letter-spacing: 1px;
+}
+
+.food-description {
+    font-size: small;
+    color: #5F564D;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.preparation-time-section {
+    background: #F8EEF3;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.preparation-time-section h3 {
+    color: #7A284E;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.preparation-time-section li::marker {
+    color: #7A284E;
+}
+
+.preparation-time-section li {
+    color: #5F564D;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.ingredients-section h3 {
+    color: #9C5A3C;
+    font-size: 1.5rem;
+}
+
+.ingredients-section li::marker {
+    color: #7A284E;
+}
+
+.ingredients-section li {
+    color: #5F564D;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.guide-section {
+    border-top: 1px solid #E3DDD7;
+    border-bottom: 1px solid #E3DDD7;
+}
+
+.guide-section h3 {
+    color: #9C5A3C;
+    font-size: 1.5rem;
+}
+
+.guide-section li::marker {
+    color: #7A284E;
+}
+
+.guide-section li {
+    color: #5F564D;
+    font-size: 90%;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+
+.nutrition-section h3 {
+    font-size: x-large;
+    color: #9C5A3C;
+}
+
+.nutrition-section p {
+    color: #5F564D;
+    font-size: 90%;
+}
+
+.nutrition-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-section td {
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E3DDD7;
+}
+
+.nutrition-section tr:last-child td {
+    border-bottom: none;
+}
+
+.name {
+    color: #5F564D;
+}
+
+.unit {
+    color: #9C5A3C;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: block;
+        background: white;
+        margin: 0px;
+    }
+
+    .card-recipe {
+        padding: 0px;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .food-image {
+        border-radius: 0px;
+    }
+
+    .food-image img {
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .food-recipe-name {
+        width: 100%;
+        font-size: 190%;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .food-description {
+        width: 100%;
+        font-size: 78%;
+        line-height: 20px;
+    }
+}
